@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- —————————————————— Yeşil Palet (Material “Green”) —————————————————— -->
+    <color name="green_50">#E8F5E9</color>
+    <color name="green_100">#C8E6C9</color>
+    <color name="green_200">#A5D6A7</color>
+    <color name="green_300">#81C784</color>
+    <color name="green_400">#66BB6A</color>
+    <color name="green_500">#4CAF50</color>    <!-- Birincil (Primary) -->
+    <color name="green_600">#43A047</color>
+    <color name="green_700">#388E3C</color>
+    <color name="green_800">#2E7D32</color>
+    <color name="green_900">#1B5E20</color>
+
+    <!-- Accent (vurgulu) renkler -->
+    <color name="green_accent_100">#B9F6CA</color>
+    <color name="green_accent_200">#69F0AE</color>  <!-- Secondary -->
+    <color name="green_accent_400">#00E676</color>
+    <color name="green_accent_700">#00C853</color>
+
+    <!-- —————————————————— Arka Plan / Surface / Metin Renkleri —————————————————— -->
+    <!-- Light Mod -->
+    <color name="background_light">#FFFFFF</color>
+    <color name="surface_light">#F9F9F9</color>
+    <color name="text_primary_light">#000000</color>
+    <color name="text_secondary_light">#5F5F5F</color>
+
+    <!-- Dark Mod -->
+    <color name="background_dark">#121212</color>
+    <color name="surface_dark">#1E1E1E</color>
+    <color name="text_primary_dark">#FFFFFF</color>
+    <color name="text_secondary_dark">#B3B3B3</color>
+
+    <!-- Kırmızı Renk -->
+    <color name="red_500">#F44336</color>
+
+</resources>

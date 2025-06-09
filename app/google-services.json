@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1094170068114",
+    "firebase_url": "https://senosors-d1e4a-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "senosors-d1e4a",
+    "storage_bucket": "senosors-d1e4a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1094170068114:android:2ad21f1f1395249807d24b",
+        "android_client_info": {
+          "package_name": "com.samet.waterflower"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCox9oAVaA7hHOaX0qQ6seyAiUSoXqCwSA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

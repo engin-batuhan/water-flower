@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.WaterMyFlower" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Birincil (Primary) renk: Material Green 500 -->
+        <item name="colorPrimary">@color/green_500</item>
+        <!-- Birincil varyant: Green 700 -->
+        <item name="colorPrimaryVariant">@color/green_700</item>
+        <!-- Birincil üstüne yazılacak metin rengi: Beyaz -->
+        <item name="colorOnPrimary">@android:color/white</item>
+
+        <!-- İkincil (Secondary) renk: Green Accent 200 -->
+        <item name="colorSecondary">@color/green_accent_200</item>
+        <item name="colorSecondaryVariant">@color/green_accent_400</item>
+        <item name="colorOnSecondary">@android:color/black</item>
+
+        <!-- Status bar ve navigation bar renkleri (PrimaryVariant) -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:navigationBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:navigationBarDividerColor">?attr/colorPrimaryVariant</item>
+
+        <!-- Açık mod için arka plan ve surface renkleri -->
+        <item name="android:colorBackground">@color/background_light</item>
+        <item name="colorSurface">@color/surface_light</item>
+
+        <!-- Açık mod için metin renkleri -->
+        <item name="android:textColorPrimary">@color/text_primary_light</item>
+        <item name="android:textColorSecondary">@color/text_secondary_light</item>
+
+        <!-- Üzerine yazılacak metin renkleri (ripple, icon tint vb.) -->
+        <item name="colorOnBackground">@color/text_primary_light</item>
+        <item name="colorOnSurface">@color/text_primary_light</item>
+
+        <!--
+                  Eğer tamamen varsayılan buton stilini kullanmak istiyorsan
+                  "buttonStyle" ve "fontFamily" satırlarını tamamen kaldırabilirsin.
+                  Aşağıdaki iki satır da projende bulunmadığı için çıkardık:
+                  <item name="buttonStyle">@style/Widget.MyApp.Button</item>
+                  <item name="android:fontFamily">@font/manrope</item>
+                  <item name="fontFamily">@font/manrope</item>
+                -->
+    </style>
+</resources>
