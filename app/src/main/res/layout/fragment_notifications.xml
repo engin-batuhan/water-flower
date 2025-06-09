@@ -2,149 +2,122 @@
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="?android:colorBackground"
-    android:fillViewport="true">
+    android:background="?android:attr/colorBackground"
+    android:fillViewport="true"
+    tools:context=".ui.notifications.NotificationsFragment">
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="0dp"
-        android:paddingBottom="12dp"
-        android:paddingStart="12dp"
-        android:paddingEnd="12dp">
+        android:paddingTop="?attr/actionBarSize"
+        android:padding="16dp">
 
-        <!-- =====================================================
-             Ayarlar Başlığı:
-             ActionBar (Activity) zaten “Settings” başlığını gösteriyor,
-             bu yüzden fragment'in içinde başlık koymaya gerek yok.
-             Ancak eğer fragment içinde farklı bir başlık kullanmak istersen:
-        ========================================================-->
-        <!--
-        <TextView
-            android:id="@+id/text_settings_title"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Settings"
-            android:textColor="?attr/colorOnBackground"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:layout_marginBottom="8dp" />
-        -->
-
-        <!-- ===========================
-             Account Bölümü
-             =========================== -->
+        <!-- Account Başlığı -->
         <TextView
             android:id="@+id/label_account"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:layout_marginBottom="4dp"
-            android:text="Account"
+            android:text="@string/label_account"
             android:textColor="?attr/colorOnBackground"
             android:textSize="18sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
 
+        <!-- Profil Kartı -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="64dp"
+            android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="8dp"
-            android:layout_marginBottom="8dp"
             android:background="?attr/colorSurface"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
             android:gravity="center_vertical">
 
-            <!-- Profil Fotoğrafı (örnek olarak kamera ikonu kullanıldı) -->
             <ImageView
                 android:id="@+id/image_profile"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:scaleType="centerCrop"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
                 android:src="@android:drawable/ic_menu_camera"
+                app:tint="?attr/colorOnSurface"
                 android:background="?attr/colorPrimaryVariant"
                 android:padding="4dp"
-                android:layout_marginEnd="8dp"
-                android:clipToOutline="true"
-                android:contentDescription="Profile Photo"
-                app:tint="?attr/colorOnSurface" />
+                android:layout_marginEnd="12dp"
+                android:contentDescription="@string/profile_photo"/>
 
             <LinearLayout
                 android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_weight="1">
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/text_account_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Samet Albayrakoğlu"
+                    android:text="Jennifer Miller"
                     android:textColor="?attr/colorOnSurface"
-                    android:textSize="15sp"
-                    android:textStyle="bold" />
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
 
                 <TextView
                     android:id="@+id/text_account_email"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="sametalbayrakoglu@gmail.com"
+                    android:text="jennifer.miller@email.com"
                     android:textColor="?attr/colorOnSecondary"
-                    android:textSize="13sp"
-                    android:layout_marginTop="2dp" />
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp"/>
             </LinearLayout>
         </LinearLayout>
 
-        <!-- ==============================
-             Notifications Bölümü
-             ============================== -->
+        <!-- Notifications Başlığı -->
         <TextView
             android:id="@+id/label_notifications"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Notifications"
+            android:text="@string/label_notifications"
             android:textColor="?attr/colorOnBackground"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:layout_marginTop="4dp"
-            android:layout_marginBottom="4dp" />
+            android:layout_marginBottom="8dp"/>
 
         <!-- Watering Notifications -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="64dp"
+            android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="8dp"
-            android:layout_marginBottom="4dp"
             android:background="?attr/colorSurface"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"
             android:gravity="center_vertical">
 
             <LinearLayout
                 android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_weight="1">
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/text_watering_notifications"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Watering Notifications"
+                    android:text="@string/watering_notifications"
                     android:textColor="?attr/colorOnSurface"
-                    android:textSize="15sp"
-                    android:textStyle="bold" />
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
 
                 <TextView
                     android:id="@+id/text_watering_notifications_desc"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Receive notifications when your plants need water"
+                    android:text="@string/watering_notifications_desc"
                     android:textColor="?attr/colorOnSecondary"
-                    android:textSize="13sp"
-                    android:layout_marginTop="2dp" />
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp"/>
             </LinearLayout>
 
             <com.google.android.material.switchmaterial.SwitchMaterial
@@ -152,43 +125,43 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                app:trackTint="?attr/colorSurface"
-                app:thumbTint="?attr/colorPrimary" />
+                app:trackTint="?attr/colorOnSurface"
+                app:thumbTint="?attr/colorPrimary"/>
         </LinearLayout>
 
         <!-- Watered Notifications -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="64dp"
+            android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="8dp"
-            android:layout_marginBottom="8dp"
             android:background="?attr/colorSurface"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
             android:gravity="center_vertical">
 
             <LinearLayout
                 android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_weight="1">
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/text_watered_notifications"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Watered Notifications"
+                    android:text="@string/watered_notifications"
                     android:textColor="?attr/colorOnSurface"
-                    android:textSize="15sp"
-                    android:textStyle="bold" />
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
 
                 <TextView
                     android:id="@+id/text_watered_notifications_desc"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Receive notifications when your plants are watered"
+                    android:text="@string/watered_notifications_desc"
                     android:textColor="?attr/colorOnSecondary"
-                    android:textSize="13sp"
-                    android:layout_marginTop="2dp" />
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp"/>
             </LinearLayout>
 
             <com.google.android.material.switchmaterial.SwitchMaterial
@@ -196,79 +169,71 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                app:trackTint="?attr/colorSurface"
-                app:thumbTint="?attr/colorPrimary" />
+                app:trackTint="?attr/colorOnSurface"
+                app:thumbTint="?attr/colorPrimary"/>
         </LinearLayout>
 
-        <!-- =========
-             App Bölümü
-             ========= -->
+        <!-- App Bölümü -->
         <TextView
             android:id="@+id/label_app"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="App"
+            android:text="@string/label_app"
             android:textColor="?attr/colorOnBackground"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:layout_marginTop="4dp"
-            android:layout_marginBottom="4dp" />
+            android:layout_marginBottom="8dp"/>
 
         <!-- Language Ayarı -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="52dp"
+            android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="8dp"
-            android:layout_marginBottom="4dp"
             android:background="?attr/colorSurface"
-            android:gravity="center_vertical">
+            android:padding="12dp"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
 
             <TextView
                 android:id="@+id/text_language_label"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Language"
+                android:layout_height="wrap_content"
+                android:text="@string/label_language"
                 android:textColor="?attr/colorOnSurface"
-                android:textSize="15sp"
-                android:textStyle="normal" />
+                android:textSize="16sp"/>
 
             <TextView
                 android:id="@+id/text_language_value"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="English"
+                android:text="@string/value_language"
                 android:textColor="?attr/colorOnSecondary"
-                android:textSize="15sp" />
+                android:textSize="16sp"/>
         </LinearLayout>
 
         <!-- Theme Ayarı -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="52dp"
+            android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="8dp"
             android:background="?attr/colorSurface"
+            android:padding="12dp"
             android:gravity="center_vertical">
 
             <TextView
                 android:id="@+id/text_theme_label"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Theme"
-                android:textColor="?attr/colorOnSurface"
-                android:textSize="15sp"
-                android:textStyle="normal" />
-
-            <TextView
-                android:id="@+id/text_theme_value"
-                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Light"
-                android:textColor="?attr/colorOnSecondary"
-                android:textSize="15sp" />
+                android:text="@string/label_theme"
+                android:textColor="?attr/colorOnSurface"
+                android:textSize="16sp"/>
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/switch_theme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
         </LinearLayout>
 
     </LinearLayout>

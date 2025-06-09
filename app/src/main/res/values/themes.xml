@@ -1,40 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
 
-
+    <!--
+      Base uygulama teması: DayNight altyapısıyla hem Light hem Dark mod destekler.
+    -->
     <style name="Theme.WaterMyFlower" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
-        <!-- Birincil (Primary) renk: Material Green 500 -->
+        <!-- Primary / Secondary renkler -->
         <item name="colorPrimary">@color/green_500</item>
-        <!-- Birincil varyant: Green 700 -->
         <item name="colorPrimaryVariant">@color/green_700</item>
-        <!-- Birincil üstüne yazılacak metin rengi: Beyaz -->
         <item name="colorOnPrimary">@android:color/white</item>
 
-        <!-- İkincil (Secondary) renk: Green Accent 200 -->
         <item name="colorSecondary">@color/green_accent_200</item>
         <item name="colorSecondaryVariant">@color/green_accent_400</item>
         <item name="colorOnSecondary">@android:color/black</item>
 
-        <!-- Status bar ve navigation bar renkleri (PrimaryVariant) -->
-        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Sistem bar arka planlarını gerçekten çiz -->
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <!-- StatusBar & NavigationBar -->
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
+        <item name="android:windowLightStatusBar">true</item>
         <item name="android:navigationBarColor">?attr/colorPrimaryVariant</item>
-        <item name="android:navigationBarDividerColor" tools:targetApi="27">?attr/colorPrimaryVariant</item>
+        <item name="android:navigationBarDividerColor"
+            tools:targetApi="28">?attr/colorPrimaryVariant</item>
 
-        <!-- Açık mod için arka plan ve surface renkleri -->
+        <!-- Light mod arka plan & surface -->
         <item name="android:colorBackground">@color/background_light</item>
         <item name="colorSurface">@color/surface_light</item>
 
-        <!-- Açık mod için metin renkleri -->
+        <!-- Light mod metin renkleri -->
         <item name="android:textColorPrimary">@color/text_primary_light</item>
         <item name="android:textColorSecondary">@color/text_secondary_light</item>
-
-        <!-- Üzerine yazılacak metin renkleri (ripple, icon tint vb.) -->
         <item name="colorOnBackground">@color/text_primary_light</item>
         <item name="colorOnSurface">@color/text_primary_light</item>
-
     </style>
 
-
+    <!-- Light modu için opsiyonel override -->
     <style name="Theme.WaterMyFlower.Light" parent="Theme.WaterMyFlower">
         <item name="android:colorBackground">@color/background_light</item>
         <item name="colorSurface">@color/surface_light</item>

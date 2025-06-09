@@ -3,4 +3,19 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="label_account">Account</string>
+    <string name="profile_photo">Profile photo</string>
+    <string name="label_notifications">Notifications</string>
+    <string name="watering_notifications">Watering Notifications</string>
+    <string name="watering_notifications_desc">Receive notifications when your plants need water</string>
+    <string name="watered_notifications">Watered Notifications</string>
+    <string name="watered_notifications_desc">Receive notifications when your plants are watered</string>
+    <string name="label_app">App</string>
+    <string name="label_language">Language</string>
+    <string name="value_language">English</string>
+    <string name="label_theme">Theme</string>
+
+
+
+
 </resources>

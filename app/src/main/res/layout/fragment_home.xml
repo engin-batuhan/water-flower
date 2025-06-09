@@ -8,9 +8,6 @@
     android:background="?android:colorBackground"
     android:padding="16dp">
 
-    <!-- Başlık -->
-
-    <!-- Section Başlığı -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
