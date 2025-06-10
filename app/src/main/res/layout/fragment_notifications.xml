@@ -58,7 +58,7 @@
                     android:id="@+id/text_account_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Jennifer Miller"
+                    android:text="Samet Albayrak"
                     android:textColor="?attr/colorOnSurface"
                     android:textSize="16sp"
                     android:textStyle="bold"/>
@@ -67,7 +67,7 @@
                     android:id="@+id/text_account_email"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="jennifer.miller@email.com"
+                    android:text="samet@gmail.com"
                     android:textColor="?attr/colorOnSecondary"
                     android:textSize="14sp"
                     android:layout_marginTop="4dp"/>
@@ -89,16 +89,16 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:background="?attr/colorSurface"
-            android:padding="12dp"
             android:layout_marginBottom="8dp"
-            android:gravity="center_vertical">
+            android:background="?attr/colorSurface"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="12dp">
 
             <LinearLayout
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:orientation="vertical">
 
                 <TextView
@@ -108,16 +108,16 @@
                     android:text="@string/watering_notifications"
                     android:textColor="?attr/colorOnSurface"
                     android:textSize="16sp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/text_watering_notifications_desc"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
                     android:text="@string/watering_notifications_desc"
                     android:textColor="?attr/colorOnSecondary"
-                    android:textSize="14sp"
-                    android:layout_marginTop="4dp"/>
+                    android:textSize="14sp" />
             </LinearLayout>
 
             <com.google.android.material.switchmaterial.SwitchMaterial
@@ -125,8 +125,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
-                app:trackTint="?attr/colorOnSurface"
-                app:thumbTint="?attr/colorPrimary"/>
+                app:thumbTint="?attr/colorPrimary"
+                app:trackTint="?attr/colorOnSurface" />
         </LinearLayout>
 
         <!-- Watered Notifications -->
